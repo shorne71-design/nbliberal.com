@@ -1,60 +1,91 @@
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: #ffffff;
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-weight: 600; /* semi-bold look */
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>NB Liberal Party Exposé</title>
 
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    padding: 2rem;
-    color: #D71920;
-  }
+  <meta name="description" content="A critical exposé of the New Brunswick Liberal Party and its leadership." />
+  <meta name="keywords" content="New Brunswick Liberal Party, Susan Holt MLA Bathurst East, Chuck Chiasson MLA Victoria-la-Vallée, Christopher Whibbs, NB politics" />
+  <meta name="author" content="Independent Political Commentary" />
 
-  h1 {
-    font-size: clamp(1.2rem, 4vw, 3rem);
-    line-height: 1.25;
-    margin: 0;
-  }
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #ffffff;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+    }
 
-  .banner {
-    font-size: clamp(1.8rem, 6vw, 4rem);
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    display: block;
-  }
+    /* Perfect centering */
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding: 1rem;
+      color: #D71920;
+      box-sizing: border-box;
+    }
 
-  .sub {
-    margin-top: 1.5rem;
-    font-size: clamp(1rem, 3.5vw, 1.7rem);
-    font-weight: 600;
-    display: block;
-  }
-</style>
+    /* Main title */
+    .banner {
+      font-size: 6vw;       /* Auto-scales down on mobile */
+      max-font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    /* Main text block */
+    .content {
+      font-size: 3.8vw;
+      max-width: 90%;
+      max-font-size: 24px;
+      line-height: 1.2;
+    }
+
+    /* Subsection */
+    .sub {
+      margin-top: 1rem;
+      font-size: 3.5vw;
+      max-font-size: 20px;
+      line-height: 1.2;
+    }
+
+    /* Force scale sanity on very small screens */
+    @media (max-width: 500px) {
+      .banner { font-size: 8vw; }
+      .content { font-size: 5vw; }
+      .sub { font-size: 4.8vw; }
+    }
+  </style>
+</head>
 
 <body>
   <div class="wrapper">
-    <h1>
-      <span class="banner">The New Brunswick Liberal Party</span>
+    <div>
+      <div class="banner">
+        The New Brunswick Liberal Party
+      </div>
 
-      Known Purveyors Of Illegal Dumping<br>
-      and Animal Cruelty.<br>
+      <div class="content">
+        Known Purveyors Of Illegal Dumping<br>
+        and Animal Cruelty.
+      </div>
 
-      <span class="sub">
+      <div class="sub">
         Starring<br>
         Chuck Chiasson – MLA Victoria-la-Vallée<br>
         Susan Holt – MLA Bathurst East<br>
         Christopher Whibbs<br>
         est 2024
-      </span>
-    </h1>
+      </div>
+    </div>
   </div>
 </body>
+</html>
