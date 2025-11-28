@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NB Liberal Party Exposé</title>
 
   <meta name="description" content="A critical exposé of the New Brunswick Liberal Party and its leadership." />
-  <meta name="keywords" content="New Brunswick Liberal Party, Susan Holt MLA Bathurst East, Chuck Chiasson MLA Victoria-la-Vallée, Christopher Whibbs, NB politics" />
+  <meta name="keywords" content="New Brunswick Liberal Party, Susan Holt, Chuck Chiasson, Christopher Whibbs, NB politics" />
   <meta name="author" content="Independent Political Commentary" />
 
   <style>
@@ -20,55 +20,52 @@
       font-weight: 600;
     }
 
-    /* Perfect centering */
+    /* TRUE vertical + horizontal centered layout */
     .wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100%;
+      width: 100%;
       text-align: center;
-      padding: 1rem;
       color: #D71920;
+      padding: 1rem;
       box-sizing: border-box;
     }
 
-    /* Main title */
+    /* 
+       THIS is the key fix:
+       A fixed "column width" guarantees perfect visual centering.
+    */
+    .column {
+      width: min(90%, 600px);
+      margin: 0 auto;
+      text-align: center;
+    }
+
     .banner {
-      font-size: 6vw;       /* Auto-scales down on mobile */
-      max-font-size: 42px;
-      font-weight: 600;
-      margin-bottom: 1rem;
+      font-size: clamp(1.8rem, 6vw, 3.2rem);
       line-height: 1.1;
+      margin-bottom: 1.2rem;
     }
 
-    /* Main text block */
     .content {
-      font-size: 3.8vw;
-      max-width: 90%;
-      max-font-size: 24px;
-      line-height: 1.2;
+      font-size: clamp(1.2rem, 4.5vw, 2rem);
+      line-height: 1.25;
+      margin-bottom: 1.2rem;
     }
 
-    /* Subsection */
     .sub {
-      margin-top: 1rem;
-      font-size: 3.5vw;
-      max-font-size: 20px;
-      line-height: 1.2;
-    }
-
-    /* Force scale sanity on very small screens */
-    @media (max-width: 500px) {
-      .banner { font-size: 8vw; }
-      .content { font-size: 5vw; }
-      .sub { font-size: 4.8vw; }
+      font-size: clamp(1rem, 4vw, 1.6rem);
+      line-height: 1.3;
     }
   </style>
 </head>
 
 <body>
   <div class="wrapper">
-    <div>
+    <div class="column">
+
       <div class="banner">
         The New Brunswick Liberal Party
       </div>
@@ -85,6 +82,7 @@
         Christopher Whibbs<br>
         est 2024
       </div>
+
     </div>
   </div>
 </body>
