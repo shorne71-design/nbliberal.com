@@ -28,20 +28,30 @@
       font-weight: 800;
       text-align: center;
       line-height: 1;
-      white-space: nowrap;
+      white-space: normal;
     }
-  </style>
+  @media (max-width: 600px) {
+  .center-text {
+    font-size: clamp(1.2rem, 6vw, 3rem);
+    line-height: 1.1;
+    padding: 0 1rem;
+  }
+  .center-text span {
+    font-size: 0.85em !important;
+  }
+}
+</style>
 </head>
 <body>
   <h1 class="center-text">
-<span style="display:inline-block; background:#D71920; color:white; padding:0.3em 0.6em; font-size:1.1em; font-weight:900; border-radius:4px;">
+<span style="display:inline-block; color:#D71920; font-weight:900; font-size:1.25em; padding:0.15em 0.35em; border:3px solid #D71920; border-radius:12px; letter-spacing:0.5px; font-style:italic;">
 The New Brunswick<br>Liberal Party
 </span>
 <br><br>
-Known Purveyors <br>
-Of Illegal <br>
-Dumping and<br>
-Animal Cruelty.<br><br>
+<span style="display:inline-block; padding:0.2em 0.4em; border:2px solid #D71920; border-radius:10px; font-weight:700;">Known Purveyors</span> <br>
+<span style="display:inline-block; padding:0.2em 0.4em; border:2px solid #D71920; border-radius:10px; font-weight:700;">Of Illegal</span> <br>
+<span style="display:inline-block; padding:0.2em 0.4em; border:2px solid #D71920; border-radius:10px; font-weight:700;">Dumping and</span><br>
+<span style="display:inline-block; padding:0.2em 0.4em; border:2px solid #D71920; border-radius:10px; font-weight:700;">Animal Cruelty</span>.<br><br>
 <span style="font-size: 0.9em; font-weight: 900;">
 Starring<br>
 Chuck Chiasson – MLA Victoria-la-Vallée<br>
