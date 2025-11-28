@@ -1,33 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Liberal — Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Brunswick Liberal Project</title>
+  <meta name="description" content="A forward-looking liberal movement in New Brunswick." />
   <style>
-    body {
+    html, body {
       margin: 0;
-      font-family: 'Helvetica Neue', 'HelveticaNeue-CondensedItalic', 'Arial Narrow', Arial, sans-serif;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       background: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
     }
-    h1 {
-      font-style: italic;
-      font-weight: 700;
-      font-size: 16rem;
-      margin: 0;
-      color: #D71920; /* Will fix if typo, user can adjust */
+
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #D71920;
+      font-size: clamp(2rem, 8vw, 8rem);
+      font-weight: 800;
+      text-align: center;
+      line-height: 1;
+      white-space: nowrap;
     }
   </style>
 </head>
 <body>
-  <h1>Liberal</h1>
+  <h1 class="center-text">Liberal</h1>
 </body>
 </html>
-
-
 
